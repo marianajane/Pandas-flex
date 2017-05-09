@@ -2,10 +2,12 @@ var panda1 = document.getElementById("img1");
 var panda2 = document.getElementById("img2");
 var panda3 = document.getElementById("img3");
 var panda4 = document.getElementById("img4");
-var par1 = document.getElementById("p1");
-var par2 = document.getElementById("p2");
-
+var parr1 = document.getElementById("p1");
+var parr2 = document.getElementById("p2");
+var flag=true;
+var flag2=true;
 var botonCerrar = document.getElementsByClassName("box-Im");
+
 var array = Array.prototype.forEach.call(botonCerrar, function (elemento){ 
 	// this.style.display = "none"
 	elemento.addEventListener("click",eliminaPanda);
@@ -27,16 +29,44 @@ function mostrarPandas() {
 
 //Botones intermedios y párrafos
 
-var botonOrigen=document.getElementById("origenTxt")
-botonOrigen.addEventListener("click", origenMosOc);
+var botonOrigen=document.getElementById("origenTxt");
+var botonExtincion=document.getElementById("extincionTxt");
 
-function origenMosOc() { 
-	par1.style.display = "none";
+botonOrigen.addEventListener("click", mostrarOcultarp1);
+botonExtincion.addEventListener("click", mostrarOcultarp2);
+
+function mostrarOcultarp1() { 
+	if (flag==true) {
+		parr1.style.display = "none";
+		flag=false;
+	} else {
+		parr1.style.display = "flex";
+	}
+	
 }
 
-var botonExtincion=document.getElementById("extincionTxt")
-botonExtincion.addEventListener("click", extincionMosOc);
+function mostrarOcultarp2() { 
+	if (flag2==true) {
+		parr2.style.display = "none";
+		flag2=false;
+	} else {
+		parr2.style.display = "flex";
+	}
+}
 
-function extincionMosOc() { 
+/*var botonOrigen=document.getElementById("origenTxt");
+botonOrigen.addEventListener("click", ocultarParrafo);
+botonOrigen.addEventListener("click", mostrarParrafo);
+
+var botonExtincion=document.getElementById("extincionTxt");
+botonExtincion.addEventListener("click", ocultarParrafo);
+botonExtincion.addEventListener("click", mostrarParrafo);
+
+function ocultarParrafo() { 
+	par1.style.display = "none";
 	par2.style.display = "none";
 }
+function mostrarParrafo() { 
+	par1.style.display = "flex";
+	par2.style.display = "flex";
+}*/
