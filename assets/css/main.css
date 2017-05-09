@@ -1,6 +1,8 @@
 body {
+	box-sizing: border-box;
 	font-family: helvetica;
 	margin: 0 auto;
+	text-align: center;
 }
 
 nav {
@@ -11,14 +13,88 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	height: auto;
-	padding: 2%;
+	padding: 1%;
 }
 
 a {
 	color: whitesmoke;
 	text-decoration: none;
+	padding: 1%;
 }
 
 .espacio-vacio {
 	width: 4%;
+}
+
+.panda-nav {
+	padding: 0;
+	width: 35%;
+}
+
+#pandas{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.box-Im {
+	margin-top: 2%;
+	margin-left: 1%;
+	width: 270px;
+	height: 200px;
+	border: 1px solid whitesmoke;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#img1 {
+	background-image: url("../img/panda1.jpg");
+}
+
+#img2 {
+	background-image: url("../img/panda2.jpg");
+}
+
+#img3 {
+	background-image: url("../img/panda3.jpg");
+}
+
+#img4 {
+	background-image: url("../img/panda4.jpg");
+}
+
+.btn-centro {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	background-color: black;
+	width: 300px;
+	margin: 1%;
+	padding: 5px; 
+}
+
+.textos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: justify;
+}
+
+.parrafo {
+	padding: 2%;
+	width: 550px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	height: auto;
+	padding: 1%;
+	margin: 0;
+}
+
+.cerrar {
+	display: flex;
+	justify-content: flex-start;
 }
