@@ -1,6 +1,6 @@
 body {
 	box-sizing: border-box;
-	font-family: helvetica;
+	font-family: 'Love Ya Like A Sister', cursive;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -22,13 +22,20 @@ a {
 	padding: 1%;
 }
 
+.titulo {
+	font-size: 30px;
+	padding: 0;
+}
+
 .espacio-vacio {
 	width: 4%;
 }
 
 .panda-nav {
+	display: flex;
+	justify-content: flex-start;
 	padding: 0;
-	width: 35%;
+	width: 34%;
 }
 
 #pandas{
@@ -43,6 +50,7 @@ a {
 	width: 270px;
 	height: 200px;
 	border: 1px solid whitesmoke;
+	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -63,6 +71,7 @@ a {
 }
 
 .btn-centro {
+	margin-top: 2%;
 	display: flex;
 	justify-content: center;
 }
@@ -72,6 +81,7 @@ a {
 	width: 300px;
 	margin: 1%;
 	padding: 5px; 
+	border-radius: 25px;
 }
 
 .textos {
